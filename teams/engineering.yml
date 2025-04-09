@@ -20,7 +20,8 @@ team_settings:
   secrets:
     - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
 software:
-webhook_settings:
-  activities+webhook:
-    enable_activites_webhook: true
-    destination_url: "https://example.com/webhook"
+org_settings:
+  webhook_settings:
+    activities+webhook:
+      enable_activites_webhook: true
+      destination_url: "https://example.com/webhook"
