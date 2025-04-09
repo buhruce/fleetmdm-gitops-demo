@@ -9,6 +9,7 @@ policies:
   - path: ../lib/macos-device-health.policies.yml
   - path: ../lib/windows-device-health.policies.yml
   - path: ../lib/linux-device-health.policies.yml
+  - path: ../lib/1password-emergency-kit-check.yml
 queries:
   - path: ../lib/collect-usb-devices.queries.yml
   - path: ../lib/collect-failed-login-attempts.queries.yml
@@ -27,3 +28,5 @@ team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
 software:
+run_script:
+  path: ../lib/1password-emergency-kit-check.sh
